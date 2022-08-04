@@ -41,8 +41,9 @@ animal2 = Animal("poisson")
 animal2.mode_deplacement()
 animal2.lieu_habitat()
 
-   
-
+animal3 = Animal("pigeon")
+animal3.mode_deplacement()
+animal3.lieu_habitat()
 
         
         
