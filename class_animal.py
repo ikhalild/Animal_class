@@ -5,13 +5,11 @@ class Animal:
     deplacement = str
     habitat= str
 
-    def __init__(self, type, deplacement, habitat):
+    def __init__(self, type):
         self.type = type
-        self.deplacement = deplacement
-        self.habitat = habitat
-    
+        
     def mode_deplacement(self):
-        if  self.type in range ["guepard","lapin"]:
+        if  self.type in  ["guepard","lapin"]:
              self.deplacement = "marche"
         elif self.type == "poisson":
              self.deplacement = "nange"  
@@ -20,10 +18,10 @@ class Animal:
         elif self.type == "autres":
             self.deplacement = "inconnu"
         
-            print(f"Un {self.type} {self.deplacement}.")
+        print(f"Un {self.type} {self.deplacement}.")
 
     def lieu_habitat(self):
-        if  self.type in range ["guepard","lapin"]:
+        if  self.type in ["guepard","lapin"]:
              self.habitat = "terre"
         elif self.type == "poisson":
              self.habitat = "eau"  
@@ -32,7 +30,12 @@ class Animal:
         elif self.type == "autres":
             self.habitat = "inconnu"
         
-            print(f"Le lieu d'habitat pour un {self.type} est {self.habitat}.")
+        print(f"Le lieu d'habitat pour un {self.type} est {self.habitat}.")
+
+                  
+animal1 = Animal("guepard")
+animal1.mode_deplacement()
+animal1.lieu_habitat()
             
 
    
