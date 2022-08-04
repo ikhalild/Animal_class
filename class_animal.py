@@ -21,6 +21,7 @@ class Animal:
             self.deplacement = "inconnu"
         
             print(f"Un {self.type} {self.deplacement}.")
+            
 
    
 
