@@ -12,7 +12,7 @@ class Animal:
         if  self.type in  ["guepard","lapin"]:
              self.deplacement = "marche"
         elif self.type == "poisson":
-             self.deplacement = "nange"  
+             self.deplacement = "nage"  
         elif self.type == "pigeon":
              self.deplacement = "vole"
         elif self.type == "autres":
@@ -37,6 +37,9 @@ animal1 = Animal("guepard")
 animal1.mode_deplacement()
 animal1.lieu_habitat()
             
+animal2 = Animal("poisson")
+animal2.mode_deplacement()
+animal2.lieu_habitat()
 
    
 
