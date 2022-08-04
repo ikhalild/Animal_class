@@ -27,8 +27,9 @@ class Animal:
              self.habitat = "eau"  
         elif self.type == "pigeon":
              self.habitat = "air"
-        elif self.type == "autres":
-            self.habitat = "inconnu"
+        else:
+             self.type == "autres"
+             self.habitat = "inconnu"
         
         print(f"Le lieu d'habitat pour un {self.type} est {self.habitat}.")
 
@@ -45,6 +46,9 @@ animal3 = Animal("pigeon")
 animal3.mode_deplacement()
 animal3.lieu_habitat()
 
+animal4 = Animal("autres")
+animal4.mode_deplacement()
+animal4.lieu_habitat()
         
         
 
